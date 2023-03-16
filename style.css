@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald", monospace;
+}
+li {
+	list-style-type: none;
+	padding-bottom: 0.5rem;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	place-items: center;
+	/* TODO: remove centering of items as header gets bigger in media query */
+}
+.logo-container {
+	max-width: 450px;
+}
+.logo-img {
+	width: min(100%);
+	margin-left: 1rem;
+	z-index: 99;
+	/* TODO: NAV HAMBURGER Z-INDEX 98 SO LOGO SHOWS ON TOP */
+}
+.top-info {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 15vw;
+	padding: 5vw;
+}
+.stock-banner {
+	width: 100vw;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.hero-text {
+	padding: 0.7rem 0.8rem;
+	font-weight: 100;
+}
+.hero-body {
+	font-size: clamp(1.06rem, 3vw + 0.2rem, 1.26rem);
+	line-height: 1.7;
+}
+.hero-h2 {
+	font-size: clamp(1.14rem, 3vw + 0.4rem, 1.31rem);
+	font-weight: bold;
+	padding: 1.2rem 0 0.6rem 0;
+}
+.bold {
+	font-weight: bold;
+}
+.help-banner {
+	text-align: center;
+	background-image: url("images/help-banner.PNG");
+	background-size: cover;
+	background-repeat: repeat-x;
+	color: white;
+	padding: 2.5rem;
+	margin: 1rem 0;
+	font-size: clamp(1.4rem, 3vw + 0.2rem, 3rem);
+}
+.card {
+	width: 18.8rem;
+	height: 26rem;
+	margin: 2rem auto;
+	border-radius: 2%;
+	box-shadow: 0 8px 50px #23232333;
+	display: grid;
+	grid-template-rows: 2fr 0.5fr 1fr;
+	place-items: center;
+	/* box-shadow: 2px 2px 25px -10px #bcc2c2; */
+	/* TODO: PUT HOVER EFFECT ON DESKTOP MODE
+	 transition: box-shadow 0.3s ease, transform 0.2s ease; 
+	 .card:hover {
+	box-shadow: 0 8px 50px #23232333;}*/
+}
+.card-img-cont {
+	margin: 2rem 2rem 0 2rem;
+}
+.card-title {
+	font-size: clamp(1.5rem, 3vw + 0.2rem, 1.8rem);
+	margin-bottom: 0;
+}
+.card-text {
+	padding: 0 1.3rem 1.3rem 1.3rem;
+	/* margin-top: -2rem; */
+	font-size: clamp(1.07rem, 3vw + 0.2rem, 1.26rem);
+}
+.card-image {
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+}
+a:link {
+	text-decoration: none;
+	color: inherit;
+}
+a:visited {
+	color: inherit;
+}
+
+footer {
+	background-color: #464648;
+	opacity: 1;
+	background-image: repeating-linear-gradient(45deg, #2b2b2d 25%, transparent 25%, transparent 75%, #2b2b2d 75%, #2b2b2d),
+		repeating-linear-gradient(45deg, #2b2b2d 25%, #464648 25%, #464648 75%, #2b2b2d 75%, #2b2b2d);
+	background-position: 0 0, 10px 10px;
+	background-size: 20px 20px;
+	bottom: 0;
+	left: 0;
+	position: sticky;
+	text-align: center;
+	top: 100%;
+	width: 100%;
+	color: white;
+	padding: 2rem;
+	font-size: 1.1rem;
+	font-weight: bolder;
+}
+.footer-info > * {
+	margin: 1rem;
+}
+.footer-address {
+	font-weight: bold;
+}
+.nav-directions::before {
+	background-image: url("images/map-icon.PNG");
+	background-size: 15px 15px;
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+
+.social {
+	mix-blend-mode: hard-light;
+	width: 55px;
+	height: 55px;
+	margin: 0.3rem 0.8rem;
+}
+@media (min-width: 475px) {
+	.help-banner {
+		background-size: contain;
+		background-repeat: repeat-x;
+	}
+}
