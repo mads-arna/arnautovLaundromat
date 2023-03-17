@@ -4,36 +4,131 @@
 	padding: 0;
 	font-family: "Oswald", monospace;
 }
-li {
-	list-style-type: none;
-	padding-bottom: 0.5rem;
-}
-
-header {
+.nav-container {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	place-items: center;
 	/* TODO: remove centering of items as header gets bigger in media query */
 }
 .logo-container {
-	max-width: 450px;
+	padding-top: 0.35rem;
+	max-width: 300px;
+	z-index: 99;
 }
 .logo-img {
-	width: min(100%);
+	width: 100%;
 	margin-left: 1rem;
-	z-index: 99;
-	/* TODO: NAV HAMBURGER Z-INDEX 98 SO LOGO SHOWS ON TOP */
 }
-.top-info {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 15vw;
-	padding: 5vw;
+.desktop-nav-info {
+	display: none;
+	font-size: 0.9rem;
 }
-.stock-banner {
+.cta-button {
+	display: none;
+	cursor: pointer;
+	appearance: none;
+	background: none;
+	outline: none;
+	/* border: 1px solid black; */
+	padding: 0.7rem;
+	border-radius: 7px;
+	/* opacity: 1;
+	background-image: repeating-linear-gradient(45deg, #2b2b2d 25%, transparent 25%, transparent 75%, #2b2b2d 75%, #2b2b2d),
+		repeating-linear-gradient(45deg, #2b2b2d 25%, #464648 25%, #464648 75%, #2b2b2d 75%, #2b2b2d);
+	background-position: 0 0, 10px 10px;
+	background-size: 20px 20px; */
+	/* color: white; */
+	font-weight: bold;
+}
+.desktop-nav {
+	display: none;
+	justify-content: space-around;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid darkgray;
+}
+/* START NAVBAR */
+.hamburger {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+	z-index: 98;
+}
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: black;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-6px, 6px);
+}
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-7px, -9px);
+}
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100vh;
+	display: block;
+	/* z-index: 50; */
+	background-color: whitesmoke;
+	color: white;
+	padding-top: 4rem;
+	transition: 0.3s;
+}
+.mobile-nav.is-active {
+	left: 0;
+}
+.mobile-nav > a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.4rem 1.5rem;
+	margin: 1.3rem 0.7rem;
+	/* background-image: url("images/help-banner.PNG");
+	background-size: cover;
+	background-repeat: repeat-x; */
+	font-size: 1.4rem;
+	border-radius: 10px;
+	box-shadow: 2px 2px 25px -10px #bcc2c2;
+}
+/* END NAVBAR */
+.cta-style {
+	background-color: blue;
+	color: white;
+}
+li {
+	list-style-type: none;
+	padding-bottom: 0.5rem;
+}
+.is-fixed {
+	overflow-y: hidden;
+}
+.hero-banner {
+	z-index: -1;
+}
+.hero-padding {
+	padding-top: 5rem;
+}
+.hero-banner-img {
 	width: 100vw;
-}
-.uppercase {
-	text-transform: uppercase;
 }
 .hero-text {
 	padding: 0.7rem 0.8rem;
@@ -43,19 +138,20 @@ header {
 	font-size: clamp(1.06rem, 3vw + 0.2rem, 1.26rem);
 	line-height: 1.7;
 }
+h1 {
+	font-weight: 100;
+}
 .hero-h2 {
 	font-size: clamp(1.14rem, 3vw + 0.4rem, 1.31rem);
 	font-weight: bold;
 	padding: 1.2rem 0 0.6rem 0;
 }
-.bold {
-	font-weight: bold;
+.bubble-background {
+	background-image: url("images/help-banner.PNG");
+	background-size: cover;
 }
 .help-banner {
 	text-align: center;
-	background-image: url("images/help-banner.PNG");
-	background-size: cover;
-	background-repeat: repeat-x;
 	color: white;
 	padding: 2.5rem;
 	margin: 1rem 0;
@@ -80,13 +176,13 @@ header {
 	margin: 2rem 2rem 0 2rem;
 }
 .card-title {
-	font-size: clamp(1.5rem, 3vw + 0.2rem, 1.8rem);
+	font-size: clamp(1.5rem, 3vw + 0.2rem, 1.5rem);
 	margin-bottom: 0;
 }
 .card-text {
 	padding: 0 1.3rem 1.3rem 1.3rem;
 	/* margin-top: -2rem; */
-	font-size: clamp(1.07rem, 3vw + 0.2rem, 1.26rem);
+	font-size: clamp(1.07rem, 3vw + 0.2rem, 1.13rem);
 }
 .card-image {
 	width: 12rem;
@@ -102,7 +198,6 @@ a:visited {
 }
 
 footer {
-	background-color: #464648;
 	opacity: 1;
 	background-image: repeating-linear-gradient(45deg, #2b2b2d 25%, transparent 25%, transparent 75%, #2b2b2d 75%, #2b2b2d),
 		repeating-linear-gradient(45deg, #2b2b2d 25%, #464648 25%, #464648 75%, #2b2b2d 75%, #2b2b2d);
@@ -123,7 +218,7 @@ footer {
 	margin: 1rem;
 }
 .footer-address {
-	font-weight: bold;
+	font-weight: 100;
 }
 .nav-directions::before {
 	background-image: url("images/map-icon.PNG");
@@ -140,9 +235,47 @@ footer {
 	height: 55px;
 	margin: 0.3rem 0.8rem;
 }
-@media (min-width: 475px) {
-	.help-banner {
+.bold {
+	font-weight: bold;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+@media (min-width: 450px) {
+	.bubble-background {
 		background-size: contain;
 		background-repeat: repeat-x;
+	}
+	.mobile-nav {
+		padding-top: 7rem;
+	}
+	.logo-container {
+		place-self: center start;
+	}
+	.hamburger {
+		place-self: center end;
+		margin-right: 3rem;
+	}
+}
+@media (min-width: 770px) {
+	.mobile-nav,
+	.hamburger {
+		display: none;
+	}
+	.nav-container {
+		grid-template-columns: 1.4fr 0.5fr 0.5fr 0.6fr;
+	}
+	.logo-container {
+		padding-top: 0.35rem;
+		max-width: 300px;
+	}
+	.desktop-nav {
+		display: flex;
+	}
+	.desktop-nav-info {
+		display: contents;
+	}
+	.cta-button {
+		display: block;
 	}
 }
