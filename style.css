@@ -4,6 +4,12 @@
 	padding: 0;
 	font-family: "Oswald", monospace;
 }
+@font-face {
+	font-family: "Serenata";
+	src: url("serenata.ttf") format("truetype");
+	font-weight: light;
+	font-style: normal;
+}
 a:link {
 	text-decoration: none;
 	color: inherit;
@@ -72,6 +78,8 @@ a:visited {
 	font-size: 1rem;
 	color: black;
 	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	background-color: whitesmoke;
 }
 
 .box {
@@ -133,10 +141,14 @@ a:visited {
 	background: transparent;
 }
 .active-pg {
-	font-weight: bold;
-	background: rgb(26, 129, 255);
-	background: radial-gradient(circle, rgba(26, 129, 255, 0.5202863961813842) 8%, rgba(0, 0, 0, 0) 100%);
-	color: black;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-radius: 20px 20px 0 0;
+	box-shadow: -2px -7px 10px #f1f1f1, 4px 6px 10px #d4d7da;
+	background-color: white;
+}
+.shadow {
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* START NAVBAR */
@@ -216,7 +228,11 @@ li {
 	overflow-y: hidden;
 }
 .hero-banner {
-	z-index: -1;
+	/* z-index: -1; */
+	display: flex;
+	justify-content: center;
+	background: rgb(200, 200, 200);
+	background: linear-gradient(117deg, rgba(200, 200, 200, 1) 0%, rgba(230, 230, 230, 1) 50%);
 }
 .hero-padding {
 	padding-top: 5rem;
@@ -231,6 +247,12 @@ li {
 .hero-body {
 	font-size: clamp(1.06rem, 3vw + 0.2rem, 1.26rem);
 	line-height: 1.7;
+}
+
+.drop-off-banner {
+	background-blend-mode: luminosity;
+	max-height: 30rem;
+	max-width: fit-content;
 }
 h1 {
 	font-weight: 100;
@@ -291,16 +313,23 @@ h1 {
 .laundry-list-section {
 	padding: 1rem;
 }
-
+.drop-off-body > ul > li {
+	margin-bottom: 1rem;
+}
+.margin-left {
+	margin-left: 1rem;
+}
+.margin-bottom {
+	margin-bottom: 1.5rem;
+}
+.hero-title {
+	font-family: "Serenata", serif;
+	font-size: 2.5rem;
+}
 footer {
 	background-color: black;
 	opacity: 0.8;
 	background-image: repeating-radial-gradient(circle at 0 center, transparent 0, black 10px), repeating-linear-gradient(#19191955, #191919);
-	/* opacity: 1;
-	background-image: repeating-linear-gradient(45deg, #323235 25%, transparent 25%, transparent 75%, #2b2b2d 75%, #2b2b2d),
-		repeating-linear-gradient(45deg, #2b2b2d 25%, #2a2a2b 25%, #464648 75%, #2b2b2d 75%, #2b2b2d);
-	background-position: 0 0, 10px 10px;
-	background-size: 20px 20px; */
 	bottom: 0;
 	left: 0;
 	position: sticky;
@@ -335,6 +364,7 @@ footer {
 }
 .bold {
 	font-weight: bold;
+	font-family: inherit;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -346,6 +376,17 @@ footer {
 .centered {
 	place-self: center;
 	text-align: center;
+}
+.flex-columns {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.drop-off-individuals {
+	margin: 1rem;
+}
+.blue {
+	color: rgba(0, 103, 230, 1);
 }
 @media (min-width: 450px) {
 	.bubble-background {
@@ -393,6 +434,10 @@ footer {
 	}
 	.card:hover {
 		box-shadow: 0 8px 50px #23232370;
+	}
+	.flex-columns {
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
 @media (min-width: 1080px) {
