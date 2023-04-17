@@ -18,17 +18,20 @@
 						<img class="logo-img" src="images/logo-expanded-black.PNG" />
 					</a>
 				</div>
-				<div class="hours desktop-nav-info">
-					6am- Midnight, Daily <br />
-					Last Wash: 10:30pm
+				<div class="desktop-nav-info">
+					<div class="nav-info-block hours text-block">
+						6am- Midnight, Daily <br />
+						<a class="phone" href="tel:8166734347"><span class="red">1-816-673-4347</span></a>
+					</div>
+					<div class="address text-block">
+						<a class="desktop-nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"
+							>6121 Blue Ridge Blvd <br />
+							Raytown, MO 64133 <br
+						/></a>
+					</div>
+					<button class="cta-button cta-style uppercase">schedule pickup</button>
 				</div>
-				<div class="address desktop-nav-info">
-					<a class="desktop-nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"
-						>6121 Blue Ridge Blvd <br />
-						Raytown, MO 64133 <br
-					/></a>
-				</div>
-				<button class="cta-button cta-style uppercase">schedule pickup</button>
+				<button class="cta-button cta-style uppercase invisible">schedule pickup</button>
 				<button class="hamburger">
 					<div class="bar"></div>
 				</button>
@@ -49,42 +52,53 @@
 				<a class="desktop-nav-button" href="#"><span class="box">faq</span></a>
 			</nav>
 		</header>
-		<div class="hero">
-			<div class="hero-banner">
+		<div class="hero hero-home blur">
+			<div class="hero-banner hero-banner-mask">
 				<img class="hero-banner-img" src="images/hero-banner.jpg" />
 			</div>
-			<div class="hero-text">
-				<h1 class="hero-title uppercase blue">welcome to <span class="bold">no spot laundry</span>, an all inclusive cleaning experience</h1>
-				<h2 class="hero-body hero-h2">Getting your laundry done has never been easier!</h2>
-				<ul class="hero-body">
-					<li>We are a family owned laundry service in Raytown, MO, where you can pleasantly do your own laundry or have us do it for you!</li>
-					<li>
-						Our laundromat is a comfortable, family-friendly place to clean your clothes. Our commercial washers and dryers can process both large and small loads easily. We accept credit/debit cards,
-						coins, and we even have a frequent customer loyalty card!
-					</li>
-					<li>In addition, we have drop off and pickup/delivery options that make doing laundry as easy as pressing a button!</li>
-					<li><span class="bold"> Let us handle your dirty laundry, giving you time back for what matters more.</span></li>
-				</ul>
+			<div class="blur-text">
+				<h1 class="blur-content hero-title uppercase blue-text">
+					welcome to <br class="large-break" />
+					<span class="bold">no spot <br class="large-break" />laundry,</span>
+					<span class="title-smaller">an all <br class="large-break" />inclusive cleaning <br class="large-break" />experience</span>
+				</h1>
 			</div>
 		</div>
-		<div class="help-banner bubble-background uppercase">how can we help you?</div>
+		<div class="hero-wrapper">
+			<ul class="paragraph-typography hero-body text-block">
+				<li class="paragraph-padding first-paragraph-padding">
+					<span class="hero-capitalize">W</span>e are a family owned laundry service in <span class="bold">Raytown, MO, </span>where you can pleasantly do your own laundry or have us do it for you!
+				</li>
+				<li class="paragraph-padding">
+					<span class="bold">No Spot Laundry</span> is a comfortable, friendly place to clean your clothes. Our industrial washers and dryers can process both large and small loads easily. We accept
+					<span class="bold">credit/debit cards, coins</span>, and we even have a frequent customer loyalty card!
+				</li>
+				<li class="paragraph-padding">In addition, we have <span class="bold">drop off and pickup/delivery options </span>that make doing laundry as easy as pressing a button!</li>
+				<li class="paragraph-padding bold closing-quote text-block">Let us handle your dirty laundry, giving you time back for the things that matter more.</li>
+			</ul>
+		</div>
+		<div class="help-banner bubble-background uppercase">what we can do for you:</div>
 		<div class="card-deck">
 			<a class="card-link" href="self-service.html">
 				<div class="card self-service">
 					<div class="card-img-cont">
-						<img class="card-image" src="images/self-service" />
+						<img class="card-image" src="images/self-service-circle.jpg" />
 					</div>
 					<div class="card-title uppercase">self service laundry</div>
-					<div class="card-text">Come visit us at our large, clean, and friendly facility in Raytown to do your laundry your way! We have everything you need for a great cleaning experience.</div>
+					<div class="card-text text-block">
+						Come visit us at our large, clean, and friendly facility in Raytown to do your laundry your way! We have everything you need for a great cleaning experience.
+					</div>
 				</div>
 			</a>
 			<a class="card-link" href="drop-off.html">
 				<div class="card drop-off">
 					<div class="card-img-cont">
-						<img class="card-image shadow" src="drop-off.jpg" />
+						<img class="card-image shadow" src="images/drop-off-circle.jpg" />
 					</div>
 					<div class="card-title uppercase">drop off wash & fold</div>
-					<div class="card-text">Don't have time to do your own laundry? Try our Drop Off Wash &amp; Fold service. Just bring your dirty laundry to us and we will take care of it for you!</div>
+					<div class="card-text text-block">
+						Don't have time to do your own laundry? Try our Drop Off Wash &amp; Fold service. Just bring your dirty laundry to us and we will take care of it for you!
+					</div>
 				</div>
 			</a>
 			<a class="card-link" href="#">
@@ -93,7 +107,7 @@
 						<img class="card-image" src="images/delivery.jpg" />
 					</div>
 					<div class="card-title uppercase">pick up & delivery</div>
-					<div class="card-text">No need to leave the house; we can pick your laundry up at your door! We'll wash, dry, fold, and return it to you clean and fresh.</div>
+					<div class="card-text text-block">No need to leave the house; we can pick your laundry up at your door! We'll wash, dry, fold, and return it to you clean and fresh.</div>
 				</div>
 			</a>
 			<a class="card-link" href="#">
@@ -102,7 +116,7 @@
 						<img class="card-image" src="images/commercial-circle.jpg" />
 					</div>
 					<div class="card-title uppercase">commercial laundry</div>
-					<div class="card-text">For busy businesses, allow us to take care of laundry so that you can focus on doing what you do best — giving your customers top level service!</div>
+					<div class="card-text text-block">For busy businesses, allow us to take care of laundry so that you can focus on doing what you do best — giving your customers top level service!</div>
 				</div>
 			</a>
 			<a class="card-link" href="#">
@@ -111,24 +125,25 @@
 						<img class="card-image" src="images/faq-circle.jpg" />
 					</div>
 					<div class="card-title uppercase">faq</div>
-					<div class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque omnis sit itaque. At, ab ad! Tempora, incidunt explicabo!</div>
+					<div class="card-text text-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque omnis sit itaque. At, ab ad! Tempora, incidunt explicabo!</div>
 				</div>
 			</a>
 		</div>
 		<footer>
-			<div class="footer-nav-cont uppercase bold">
-				<div class="nav-contact"><a href="#">Contact Us</a></div>
-			</div>
+			<div class="footer-nav-cont uppercase bold"></div>
 			<div class="footer-info">
+				<div class="footer-address">
+					<span class="bold blue-pri"> No Spot Laundry</span> <br />
+					6121 Blue Ridge Blvd <br />
+					Raytown, MO 64133 <br />
+					<a class="nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"> Get Directions</a>
+				</div>
 				<div class="footer-hours">
 					Hours: 6am - Midnight, Daily <br />
 					Last Wash: 10:30pm
 				</div>
-				<div class="footer-address">
-					<span class="bold"> No Spot Laundry</span> <br />
-					6121 Blue Ridge Blvd <br />
-					Raytown, MO 64133 <br />
-					<a class="nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"> Get Directions</a>
+				<div class="contact phone">
+					<a href="tel:8166734347"><span class="red">1-816-673-4347</span></a>
 				</div>
 			</div>
 			<div class="footer-socials">
