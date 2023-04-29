@@ -505,7 +505,10 @@ footer {
 }
 .bold {
 	font-weight: 600;
-	font-family: inherit;
+	/* font-family: inherit; */
+}
+.background {
+	background-color: #ccdeea;
 }
 .uppercase {
 	text-transform: uppercase;
@@ -550,6 +553,14 @@ footer {
 .small-paragraph-padding {
 	padding: 0 1.2rem;
 	padding-bottom: 1.4rem;
+}
+.no-bottom-space {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+.no-top-space {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
 }
 @media (min-width: 430px) {
 	.mobile-nav {
