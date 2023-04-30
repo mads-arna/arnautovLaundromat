@@ -5,17 +5,17 @@
 }
 @font-face {
 	font-family: "Serenata";
-	src: url("serenata.ttf") format("truetype");
+	src: url("fonts/serenata.ttf") format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "Exa";
-	src: url("Grtsk-LightExa.ttf") format("truetype");
+	src: url("fonts/Grtsk-LightExa.ttf") format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "Bold-Exa";
-	src: url("Grtsk-SemiBoldExa.ttf") format("truetype");
+	src: url("fonts/Grtsk-SemiBoldExa.ttf") format("truetype");
 	font-style: normal;
 }
 :root {
@@ -25,6 +25,7 @@
 }
 html {
 	font-family: "Oswald", monospace;
+	scroll-behavior: smooth;
 }
 .text-block {
 	font-family: "Exa", monospace;
@@ -444,7 +445,9 @@ li {
 	width: 100%;
 	border-bottom: thin dashed var(--blue-text);
 }
-
+.laundry-list-heading {
+	font-size: clamp(1.68rem, 3vw + 0.2rem, 1.7rem);
+}
 .laundry-list-section {
 	padding: 1rem;
 }
@@ -452,8 +455,16 @@ li {
 	margin-bottom: 1rem;
 }
 /* PRICE CARDS END */
-.tab {
-	text-align: center;
+.coming-soon-img {
+	max-width: 600px;
+}
+.coming-soon-banner {
+	background-color: #00bea6;
+	flex-direction: row !important;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 52% 97%, 50% 100%, 48% 97%, 0% 97%);
+}
+.coming-soon-wrapper {
+	margin-top: 0 !important;
 }
 .margin-left {
 	margin-left: 1rem;
@@ -547,6 +558,9 @@ footer {
 .phone {
 	display: inline;
 }
+.contact-phone {
+	margin-bottom: 1.5rem;
+}
 .list-padding {
 	padding-top: 1rem;
 }
@@ -561,6 +575,37 @@ footer {
 .no-top-space {
 	margin-top: 0 !important;
 	padding-top: 0 !important;
+}
+.faq-links-wrapper {
+	display: flex;
+	flex-direction: column !important;
+	color: var(--grey-text);
+	text-decoration: solid underline var(--pri-color);
+	align-items: center !important;
+}
+.faq-link {
+	max-width: 25rem;
+}
+.faq-spacing {
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+.self-serve-q {
+	margin-top: 1rem;
+}
+.faq-question {
+	font-size: clamp(1.06rem, 3vw + 0.55rem, 1.3rem);
+	text-transform: uppercase;
+	font-family: "Exa";
+	margin-bottom: 0.6rem;
+	margin-top: 2rem;
+	color: black;
+}
+.faq-text {
+	font-size: clamp(1.055rem, 3vw + 0.455rem, 1.25rem);
+	font-weight: bolder;
+	color: #726b7b;
+	padding-bottom: 1rem;
 }
 @media (min-width: 430px) {
 	.mobile-nav {
@@ -786,7 +831,7 @@ footer {
 	}
 
 	.hero-title {
-		font-size: min(4.7vw, 100px);
+		font-size: min(4.7vw, 80px);
 		padding-bottom: 5rem;
 		font-weight: 100;
 	}
