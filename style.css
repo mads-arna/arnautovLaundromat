@@ -22,6 +22,9 @@
 	--pri-color: #1a81ff;
 	--blue-text: rgba(0, 103, 230, 1);
 	--grey-text: #111010;
+	--light-grey-text: #655f6d;
+	--pri-text: #000000;
+	--faq-bold: #4c4752;
 }
 html {
 	font-family: "Oswald", monospace;
@@ -449,7 +452,7 @@ li {
 	font-size: clamp(1.68rem, 3vw + 0.2rem, 1.7rem);
 }
 .laundry-list-section {
-	padding: 1rem;
+	padding: 2rem;
 }
 .drop-off-body > ul > li {
 	margin-bottom: 1rem;
@@ -583,9 +586,6 @@ footer {
 	text-decoration: solid underline var(--pri-color);
 	align-items: center !important;
 }
-.faq-link {
-	max-width: 25rem;
-}
 .faq-spacing {
 	padding-top: 3rem;
 	padding-bottom: 1rem;
@@ -599,13 +599,26 @@ footer {
 	font-family: "Exa";
 	margin-bottom: 0.6rem;
 	margin-top: 2rem;
-	color: black;
+	color: var(--pri-text);
 }
 .faq-text {
 	font-size: clamp(1.055rem, 3vw + 0.455rem, 1.25rem);
 	font-weight: bolder;
-	color: #726b7b;
+	color: var(--light-grey-text);
 	padding-bottom: 1rem;
+}
+.faq-bold {
+	color: var(--faq-bold)
+
+}
+.self-service-flex-wrapper {
+	display:flex;
+	flex-wrap:wrap;
+}
+.laundry-list {
+	justify-content: space-evenly;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 @media (min-width: 430px) {
 	.mobile-nav {
@@ -691,6 +704,7 @@ footer {
 		margin-right: min(20vw, 400px);
 		margin-bottom: 3rem;
 	}
+
 }
 
 @media (min-width: 770px) {
@@ -760,11 +774,12 @@ footer {
 	}
 	.cta-button {
 		padding: 0.8rem 3vw;
-		font-size: 0.97rem;
+		font-size: 1rem;
 	}
 	.paragraph-typography > * {
 		line-height: 1.6;
-		font-size: clamp(1.06rem, 3vw + 0.55rem, 1.35rem);
+		font-size: 1.5rem;
+		/* font-size: clamp(1.06rem, 3vw + 0.55rem, 1.35rem); */
 	}
 	.logo-container {
 		margin-left: 2vw;
@@ -772,16 +787,13 @@ footer {
 	.blur-content {
 		text-align: center;
 	}
-	.laundry-list {
-		justify-content: space-evenly;
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
+	
 	.price-card {
 		margin-left: min(5vw, 40px);
 		margin-right: min(5vw, 40px);
 		margin-bottom: 4rem;
 	}
+	
 }
 @media (max-width: 1400px) {
 	.large-break {
@@ -838,6 +850,13 @@ footer {
 	.title-smaller {
 		font-size: min(2.5vw, 50px);
 	}
+	.desktop-nav {
+		font-size:1.2rem;
+	}
+	.cta-button {
+		padding: 0.5rem 3vw;
+		font-size: 1.2rem;
+	}
 }
 @media (min-width: 1600px) {
 	.blur-text {
@@ -853,6 +872,14 @@ footer {
 	.laundry-list {
 		max-width: 1450px;
 		margin: 3rem auto;
+	}
+	.desktop-nav-info {
+		font-size: 0.85rem;
+		font-weight: bold;
+	}
+	.cta-button {
+		padding: 0.65rem 3vw;
+		font-size: 1.2rem;
 	}
 }
 
