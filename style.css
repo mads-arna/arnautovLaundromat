@@ -493,6 +493,7 @@ footer {
 	width: 100%;
 	color: white;
 	padding: 2rem;
+	padding-bottom:2.5rem;
 	font-size: 1.1rem;
 	font-weight: bolder;
 }
@@ -510,9 +511,7 @@ footer {
 	width: 15px;
 	height: 15px;
 }
-
 .social {
-	mix-blend-mode: hard-light;
 	width: 55px;
 	height: 55px;
 	margin: 0.3rem 0.8rem;
@@ -520,6 +519,10 @@ footer {
 .bold {
 	font-weight: 600;
 	/* font-family: inherit; */
+}
+.footer-heading {
+	font-size: 1.8rem;
+	line-height: .5;
 }
 .background {
 	background-color: #ccdeea;
