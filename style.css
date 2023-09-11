@@ -66,7 +66,6 @@ li {
 	color: black;
 	border-top: 1px solid lightslategray;
 	border-bottom: 1px solid lightslategray;
-	/* background-color: whitesmoke; */
 }
 
 .box {
@@ -119,7 +118,6 @@ li {
 	transition: 0.3s transform linear;
 }
 .cta-button {
-	/* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); */
 	display: none;
 	cursor: pointer;
 	appearance: none;
@@ -242,9 +240,6 @@ li {
 	align-items: center;
 	padding: 1.4rem 1.5rem;
 	margin: 1.3rem 0.7rem;
-	/* background-image: url("images/help-banner.PNG");
-	background-size: cover;
-	background-repeat: repeat-x; */
 	font-size: 1.4rem;
 	border-radius: 10px;
 	box-shadow: 2px 2px 25px -10px #bcc2c2;
@@ -266,8 +261,6 @@ li {
 	z-index: 0;
 	display: flex;
 	justify-content: center;
-	/* background: rgb(200, 200, 200);
-	background: linear-gradient(117deg, rgba(200, 200, 200, 1) 0%, rgba(230, 230, 230, 1) 50%); */
 	clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 55% 97%, 50% 100%, 45% 97%, 0% 97%);
 	margin-bottom: -1rem;
 }
@@ -395,7 +388,6 @@ li {
 .price-card-content {
 	font-family: "Bold-Exa";
 	letter-spacing: 1px;
-	/* padding-top: 1rem; */
 	place-self: center;
 	color: white;
 	text-align: center;
@@ -500,6 +492,10 @@ footer {
 .footer-info > * {
 	margin: 1rem;
 }
+.footer-heading {
+	font-size: 1.8rem;
+	line-height: .5;
+}
 .footer-address {
 	font-weight: 100;
 }
@@ -516,13 +512,11 @@ footer {
 	height: 55px;
 	margin: 0.3rem 0.8rem;
 }
+.tos {
+	text-decoration: underline var(--pri-color) solid;
+}
 .bold {
 	font-weight: 600;
-	/* font-family: inherit; */
-}
-.footer-heading {
-	font-size: 1.8rem;
-	line-height: .5;
 }
 .background {
 	background-color: #ccdeea;
@@ -553,7 +547,15 @@ footer {
 	color: red;
 }
 .blue-text {
-	color: rgba(0, 103, 230, 1);
+	color: var(--blue-text);
+}
+.blue-faq-q {
+	font-size: clamp(1.06rem, 3vw + 0.55rem, 1.3rem);
+	text-transform: uppercase;
+	font-family: "Exa";
+	margin-bottom: 0.6rem;
+	margin-top: 2rem;
+	color: var(--blue-text);
 }
 .blue-pri {
 	color: var(--pri-color);
@@ -782,7 +784,6 @@ footer {
 	.paragraph-typography > * {
 		line-height: 1.6;
 		font-size: 1.5rem;
-		/* font-size: clamp(1.06rem, 3vw + 0.55rem, 1.35rem); */
 	}
 	.logo-container {
 		margin-left: 2vw;
@@ -885,13 +886,3 @@ footer {
 		font-size: 1.2rem;
 	}
 }
-
-@media (min-width: 1800px) {
-	.hero-wrapper {
-		/* max-width: 1250px; */
-	}
-}
-
-/* TODO: AT LARGER SCREEN SIZES, GIVE TEXT BLOCKS + SMALL VW WIDTH SO NOT SO NARROW */
-/* TODO: GET RID OF TINY SPACE UNDER BANNER */
-/* TODO: CENTER TITLE AT LARGE SCREEN SIZES BUT KEEP TEXT LEFT-ALIGNED */
