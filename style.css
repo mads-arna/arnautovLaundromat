@@ -40,6 +40,10 @@ a:link {
 a:visited {
 	color: inherit;
 }
+.link-style {
+	color: var(--grey-text);
+	text-decoration: underline var(--pri-color) solid;
+}
 li {
 	list-style-type: none;
 }
