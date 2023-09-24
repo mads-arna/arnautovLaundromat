@@ -1,258 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet" />
-		<title>Frequently Asked</title>
-	</head>
-	<body>
-		<header>
-			<div class="nav-container">
-				<div class="logo-container">
-					<a class="logo-link" href="index.html">
-						<img class="logo-img" src="images/logo-expanded-black.PNG" />
-					</a>
-				</div>
-				<div class="desktop-nav-info">
-					<div class="nav-info-block hours text-block">
-						6am- Midnight, Daily <br />
-						<a class="phone" href="tel:8169121192">816-912-1192</a>
-					</div>
-					<div class="address text-block">
-						<a class="desktop-nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"
-							>6121 Blue Ridge Blvd <br />
-							Raytown, MO 64133 <br
-						/></a>
-					</div>
-					<a href="https://app.trycents.com/order/business/OGRm/OTlo/home" target="_blank"><button class="cta-button cta-style uppercase">schedule pickup</button></a>
-				</div>
-				<!-- <button class="cta-button .btn-animation cta-style uppercase invisible">schedule pickup</button> -->
-				<button class="hamburger">
-					<div class="bar"></div>
-				</button>
-				<nav class="mobile-nav uppercase">
-					<a class="cta-style cta-button" href="https://app.trycents.com/order/business/OGRm/OTlo/home" target="_blank">schedule pickup</a>
-					<a class="bubble-background" href="self-service.html">self service laundry</a>
-					<a class="bubble-background" href="drop-off.html">drop off wash & fold</a>
-					<a class="bubble-background" href="pickup.html">pick up & delivery</a>
-					<a class="bubble-background" href="commercial.html">commercial laundry</a>
-					<a class="bubble-background" href="faq.html">frequently asked questions</a>
-				</nav>
-			</div>
-			<nav class="desktop-nav uppercase">
-				<a class="desktop-nav-button" href="self-service.html"><span class="box">self service laundry</span></a>
-				<a class="desktop-nav-button" href="drop-off.html"><span class="box">drop off wash & fold</span></a>
-				<a class="desktop-nav-button" href="pickup.html"><span class="box">pick up & delivery</span></a>
-				<a class="desktop-nav-button" href="commercial.html"><span class="box">commercial laundry</span></a>
-				<a class="desktop-nav-button active-pg" href="faq.html"><span class="box active-pg">faq</span></a>
-			</nav>
-		</header>
-		<div class="hero hero-home blur">
-			<div class="hero-banner hero-banner-mask">
-				<img class="hero-banner-img" src="images/faq.jpg" />
-			</div>
-			<div class="blur-text">
-				<div class="blur-content hero-title uppercase blue-text">Frequently Asked Questions</div>
-			</div>
-		</div>
-		<div class="hero-wrapper">
-			<ul class="paragraph-typography hero-body text-block">
-				<li class="paragraph-padding faq-links-wrapper">
-					<a href="#self-serve-sect" class="box">Self Service Questions</a>
-					<a href="#drop-off-sect" class="box">Drop Off Wash & Fold Questions</a>
-					<a href="#pickup-sect" class="box">Pick Up & Delivery Laundry Questions</a>
-					<a href="#commercial-sect" class="box">Commercial Laundry Questions</a>
-					<a href="terms-of-service.html" class="box">Terms Of Service</a>
-				</li>
-			</ul>
-			<section id="general-sect">
-				<li class="blue-text first-paragraph-padding intro-opener centered">General Questions:</li>
-				<ul class="paragraph-typography hero-body small-paragraph-padding text-block first-paragraph-padding">
-					<li class="faq-question">What are your regular hours?</li>
-					<li class="faq-text">
-						We are open <span class="faq-bold">every day </span>of the week between  <span class="faq-bold">6:00am</span> and <span class="faq-bold">12:00am (Last wash needs to start before 10:30pm)!</span>
-					</li>
-					<li class="faq-question">It's a holiday, is No Spot Laundry open?</li>
-					<li class="faq-text">
-						We may be closed, depending on the holiday. Our <a class="blue-text" href="https://goo.gl/maps/maJE5EXuQ3USbdGQ8" target="_blank"> <span class="link-style">Google Maps</span></a> page will have accurate <span class="faq-bold">holiday hours,</span> so please check before visiting if you are unsure.
-					</li>
-					<li class="faq-question">Do you do dry cleaning?</li>
-					<li class="faq-text">We <span class="faq-bold">do not</span>, at this time we only have the facilities to process traditional laundry.</li>
-					<li class="faq-question">Are you hiring?</li>
-					<li class="faq-text">
-						We are <span class="faq-bold">always open</span> to new talent! If you are friendly, hardworking, reliable, and looking for part-time work, we'd love to meet you. Tell us about yourself (including <span class="faq-bold">contact info</span> and a <span class="faq-bold">resume</span>) in an email to
-						<span class="link-style red">EMAIL</span> and we’ll be in touch!
-					</li>
-					<li class="faq-question">What forms of payment do you take?</li>
-					<li id="loyalty-card" class="faq-text">
-						Our machines accept <span class="faq-bold">coins, credit, debit,</span> and our Frequent Customer Loyalty Cards. We have an<span class="faq-bold"> ATM</span> and a <span class="faq-bold">change machine</span> on site as well.
-					</li>
-					<li class="faq-question">What is a Frequent Customer Loyalty Card, and how do I get one?</li>
-					<li class="faq-text">
-							Our loyalty card is the easiest way to save even more at <span class="faq-bold">No Spot Laundry</span>! You will receive a <span class="faq-bold">10% discount</span> every time you use it. You can purchase, load and reload your reusable loyalty card anytime you like at the <span class="faq-bold">kiosk in our laundromat</span> or <span class="link-style"> <a href="https://secure3.washcard.com/AP2/GuestLanding" target="_blank"> right here</a></span>! Then, just use it to pay for washers and dryers like you would any other card, and watch the savings add up.
-					</li>
-				</ul>
-			</section>
-			<section id="self-serve-sect">
-				<li class="blue-text first-paragraph-padding intro-opener centered faq-spacing">Self-Service Questions:</li>
-				<ul class="paragraph-typography hero-body small-paragraph-padding text-block first-paragraph-padding">
-					<li class="faq-question">Where do I park?</li>
-					<li class="faq-text">We have plenty of <span class="faq-bold">parking right in front</span> of <span class="faq-bold">No Spot Laundry</span> in our large lot. No driving around for 15 minutes looking for a spot or parallel parking necessary!</li>
-					<li class="faq-question">What are your “busy hours”?</li>
-					<li class="faq-text">
-						Our <span class="faq-bold">busiest</span> day of the week is always Sunday, with peak washing hours occurring between 9:00am and 9:00pm. Our <span class="faq-bold">quietest</span> times are Tuesdays and Thursdays between 6:00am and 3:00pm.
-					</li>
-					<li class="faq-question">How long does a laundry cycle take?</li>
-					<li class="faq-text">
-						Our commercial washers and dryers are fast! Most wash cycles take around <span class="faq-bold">25-30 minutes</span>, and dryer times are typically <span class="faq-bold">30-40 minutes</span>.
-					</li>
-					<li class="faq-question">Do you offer laundry products for sale onsite?</li>
-					<li class="faq-text">
-						You bet! we offer Tide, Gain, and All Free Clear detergents, chlorox bleach, and Snuggle or Suavitel fabric softener.</li>
-				</ul>
-			</section>
-			<section id="drop-off-sect">
-				<li class="blue-text first-paragraph-padding intro-opener centered faq-spacing">Drop Off Wash & Fold Questions:</li>
-				<ul class="paragraph-typography hero-body text-block first-paragraph-padding small-paragraph-padding">
-					<li class="faq-question">Are there any clothes you cannot clean with your Drop Off Wash & Fold service?</li>
-					<li class="faq-text">
-						Garments that have <span class="faq-bold">glued on decorations, delicate beading,</span> or are made out of fibers such as <span class="faq-bold">silk</span> are not recommended, those are better gently hand washed. If in doubt, <span class="faq-bold">ask us</span> when you drop off!
-					</li>
-					<li class="faq-question">What is the turn around on a typical drop off order?</li>
-					<li class="faq-text">
-						You will be able to pick up your items after <span class="faq-bold">24 hours (Monday – Friday)</span>! If you drop off on a Friday, your clothing will be ready for you the following Monday.
-					</li>
-					<li class="faq-question">Is there a minimum charge?</li>
-					<li class="faq-text">
-						We do have a minimum charge of <span class="faq-bold">$17.50</span> for drop off orders.
-					</li>
-					<li class="faq-question">Will my clothes be washed or dried with other customer’s clothes?</li>
-					<li class="faq-text">
-						Absolutely not! We wash and dry everyone's laundry order individually in <span class="faq-bold">separate machines</span>.
-					</li>
-					<li class="faq-question">Do I need to sort my clothes by different colors?</li>
-					<li class="faq-text">
-						No need, we will do all sorting for you! We just ask that you put items with specific <span class="faq-bold">stains</span> you'd like us to treat in a <span class="faq-bold">separate bag</span> and let us know to treat them before washing.
-					</li>
-					<li class="faq-question">Do I need to weigh my order?</li>
-					<li class="faq-text">
-						We have a commercial, <span class="faq-bold">trade certified scale</span> that we use to weigh all orders, much easier than a household scale!
-					</li>
-					<li class="faq-question">Can you treat stains?</li>
-					<li class="faq-text">
-						We can definitely <span class="faq-bold">pre-treat </span>stained items before we wash them. Some are beyond our capability of removing, but we are successful in getting out many stains. 
-					</li>
-					<li class="faq-text">
-						Please <span class="faq-bold">place</span> all items you would like pre-treated in a <span class="faq-bold">separate bag</span> and let us know in your instructions</span>.
-					</li>
-					<li class="faq-question">How will I know when my order is complete?</li>
-					<li class="faq-text">
-						We'll send you a <span class="faq-bold">text</span> to let you know that your clothes are sparkling clean and ready for pickup!
-					</li>
-				</ul>
-			</section>
-			<section id="pickup-sect">
-				<li class="blue-text first-paragraph-padding intro-opener centered faq-spacing">Pick Up & Delivery Questions:</li>
-				<ul class="paragraph-typography hero-body text-block first-paragraph-padding small-paragraph-padding">
-					<li class="faq-question">Are there delivery fees?</li>
-					<li class="faq-text">
-						There are no pickup or delivery fees at <span class="faq-bold">No Spot Laundry</span>, you only pay for the <span class="faq-bold">weight</span> of the laundry that you'd like us to clean! 
-					</li>
-					<li class="faq-question">Do I get to keep my laundry bag?</li>
-					<li class="faq-text">
-						Absolutely! Let us know if you have more laundry then the bag can hold and we will send you a second one for your convenience.
-					</li>
-					<li class="faq-question">What is the turn around on a typical Pick up & delivery order?</li>
-					<li class="faq-text">
-						Your laundry will be delivered to your door just <span class="faq-bold">one business day</span> after we pick it up.
-					</li>
-					<li class="faq-question">Is there a minimum charge for pickup?</li>
-					<li class="faq-text">
-					 For our Pick Up & Delivery service, We have a minimum charge of <span class="faq-bold">$35</span>.
-					</li>
-					<li class="faq-question">Will you remind me to leave my laundry out for pickup?</li>
-					<li class="faq-text">
-						Of course! You will receive a <span class="faq-bold">notification </span> from us <span class="faq-bold">a day prior</span> to your pick up to let you know to leave your laundry out for us.
-					</li>
-					<li class="faq-question">What if I’m not home when you pick up or deliver?</li>
-					<li class="faq-text">
-						No problem - just leave your laundry somewhere we can access it and <span class="faq-bold">let us know</span> of its location in your <span class="faq-bold">Pickup/Delivery instructions</span>. Many people have us leave their laundry at their back door or on the porch if they are not home. Just make sure it's protected from the elements!
-					</li>
-					<li class="faq-question">I missed my pickup day. what now?</li>
-					<li class="faq-text">
-						You can just arrange another pick up time, and we'll come back around for you! We do charge a <span class="faq-bold">$10 missed pickup fee</span>.
-					</li>
-					<li class="faq-question">Will I be notified when my laundry is delivered?</li>
-					<li class="faq-text">
-						No need to wait by the window, we'll send you a <span class="faq-bold">text</span> when we've delivered your clothes. It's that easy!
-					</li>
-					<li class="faq-question"></li>
-					<li class="faq-text">
-						
-					</li>
-				</ul>
-			</section>
-			<section id="commercial-sect">
-				<li class="blue-text first-paragraph-padding intro-opener centered faq-spacing">Commercial Laundry Questions:</li>
-				<ul class="paragraph-typography hero-body text-block first-paragraph-padding small-paragraph-padding">
-					<li class="faq-question">Do I need to sign a contract?</li>
-					<li class="faq-text">
-						<span class="faq-bold">None whatsoever</span>, We'll have to <span class="faq-bold">earn your business</span> each and every time!
-					</li>
-					<li class="faq-question">Do you lease laundry items or linens?</li>
-					<li class="faq-text">
-						We don't currently lease these items.
-					</li>
-					<li class="faq-question">How do i get a quote for my business?</li>
-					<li class="faq-text">
-						Call us at <span class="red link-style"><a class="phone" href="tel:8169121192">816-912-1192</a></span> or write us at <span class="red link-style">
-						<a href="mailto:info@sclaundromats.com">
-						info@sclaundromats.com</a></span>. we'll even give you 20% off your first order, just for trying out <span class="faq-bold">No Spot Laundry</span>!
-					</li>
-					<li class="faq-question"></li>
-					<li class="faq-text">
-						If you have a laundry-related question that is not answered on this page,  and we will be happy to answer it for you!
-					</li>
-				</ul>
-			</section>
-		</div>
-		<footer>
-			<div class="footer-nav-cont uppercase bold"></div>
-			<div class="footer-info">
-				<div class="footer-address">
-					<div class="bold blue-pri footer-heading"> No Spot Laundry</div> <br />
-					6121 Blue Ridge Blvd <br />
-					Raytown, MO 64133 <br />
-					<a class="nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"> Get Directions</a>
-				</div>
-				<div class="footer-hours">
-					Hours: 6am - Midnight, Daily <br />
-					Last Wash: 10:30pm
-				</div>
-				<div class="contact contact-phone">
-					<a class="phone" href="tel:8169121192">816-912-1192</a>
-				</div>
-			</div>
-			<div class="footer-socials">
-				<a href="https://www.facebook.com/profile.php?id=100091963404810" target="blank">
-					<img class="social fb-icon" src="images/fb-icon.jpg" />
-				</a>
-				<a href="https://www.instagram.com/nospotlaundry/" target="blank">
-					<img class="social ig-icon" src="images/insta-icon.jpg" />
-				</a>
-			</div>
-			</div>
-			<div class="footer-info">
-				<div class="tos">
-					<a class="tos" href="terms-of-service.html">Terms Of Service</a>
-				</div>
-			</div>
-		</footer>
-		<script src="app.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frequently Asked</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a class="logo-link" href="index.html">
+            <img class="logo-img" src="images/logo-expanded-black.PNG" />
+          </a>
+        </div>
+        <div class="desktop-nav-info">
+          <div class="nav-info-block hours text-block">
+            6am- Midnight, Daily <br />
+            <a class="phone" href="tel:8169121192">816-912-1192</a>
+          </div>
+          <div class="address text-block">
+            <a
+              class="desktop-nav-directions"
+              href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO"
+              target="_blank"
+              >6121 Blue Ridge Blvd <br />
+              Raytown, MO 64133 <br
+            /></a>
+          </div>
+          <a
+            href="https://app.trycents.com/order/business/OGRm/OTlo/home"
+            target="_blank"
+            ><button class="cta-button cta-style uppercase">
+              schedule pickup
+            </button></a
+          >
+        </div>
+        <!-- <button class="cta-button .btn-animation cta-style uppercase invisible">schedule pickup</button> -->
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+        <nav class="mobile-nav uppercase">
+          <a
+            class="cta-style cta-button"
+            href="https://app.trycents.com/order/business/OGRm/OTlo/home"
+            target="_blank"
+            >schedule pickup</a
+          >
+          <a class="bubble-background" href="self-service.html"
+            >self service laundry</a
+          >
+          <a class="bubble-background" href="drop-off.html"
+            >drop off wash & fold</a
+          >
+          <a class="bubble-background" href="pickup.html">pick up & delivery</a>
+          <a class="bubble-background" href="commercial.html"
+            >commercial laundry</a
+          >
+          <a class="bubble-background" href="faq.html"
+            >frequently asked questions</a
+          >
+        </nav>
+      </div>
+      <nav class="desktop-nav uppercase">
+        <a class="desktop-nav-button" href="self-service.html"
+          ><span class="box">self service laundry</span></a
+        >
+        <a class="desktop-nav-button" href="drop-off.html"
+          ><span class="box">drop off wash & fold</span></a
+        >
+        <a class="desktop-nav-button" href="pickup.html"
+          ><span class="box">pick up & delivery</span></a
+        >
+        <a class="desktop-nav-button" href="commercial.html"
+          ><span class="box">commercial laundry</span></a
+        >
+        <a class="desktop-nav-button active-pg" href="faq.html"
+          ><span class="box active-pg">faq</span></a
+        >
+      </nav>
+    </header>
+    <div class="hero hero-home blur">
+      <div class="hero-banner hero-banner-mask">
+        <img class="hero-banner-img" src="images/faq.jpg" />
+      </div>
+      <div class="blur-text">
+        <div class="blur-content hero-title uppercase blue-text">
+          Frequently Asked Questions
+        </div>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <ul class="paragraph-typography hero-body text-block">
+        <li class="paragraph-padding faq-links-wrapper">
+          <a href="#self-serve-sect" class="box">Self Service Questions</a>
+          <a href="#drop-off-sect" class="box"
+            >Drop Off Wash & Fold Questions</a
+          >
+          <a href="#pickup-sect" class="box"
+            >Pick Up & Delivery Laundry Questions</a
+          >
+          <a href="#commercial-sect" class="box"
+            >Commercial Laundry Questions</a
+          >
+          <a href="terms-of-service.html" class="box">Terms Of Service</a>
+        </li>
+      </ul>
+      <section id="general-sect">
+        <li class="blue-text first-paragraph-padding intro-opener centered">
+          General Questions:
+        </li>
+        <ul
+          class="paragraph-typography hero-body small-paragraph-padding text-block first-paragraph-padding"
+        >
+          <li class="faq-question">What are your regular hours?</li>
+          <li class="faq-text">
+            We are open <span class="faq-bold">every day </span>of the week
+            between <span class="faq-bold">6:00am</span> and
+            <span class="faq-bold"
+              >12:00am (Last wash needs to start before 10:30pm)!</span
+            >
+          </li>
+          <li class="faq-question">It's a holiday, is No Spot Laundry open?</li>
+          <li class="faq-text">
+            We may be closed, depending on the holiday. Our
+            <a
+              class="blue-text"
+              href="https://goo.gl/maps/maJE5EXuQ3USbdGQ8"
+              target="_blank"
+            >
+              <span class="link-style">Google Maps</span></a
+            >
+            page will have accurate
+            <span class="faq-bold">holiday hours,</span> so please check before
+            visiting if you are unsure.
+          </li>
+          <li class="faq-question">Do you do dry cleaning?</li>
+          <li class="faq-text">
+            We <span class="faq-bold">do not</span>, at this time we only have
+            the facilities to process traditional laundry.
+          </li>
+          <li class="faq-question">Are you hiring?</li>
+          <li class="faq-text">
+            We are <span class="faq-bold">always open</span> to new talent! If
+            you are friendly, hardworking, reliable, and looking for part-time
+            work, we'd love to meet you. Tell us about yourself (including
+            <span class="faq-bold">contact info</span> and a
+            <span class="faq-bold">resume</span>) in an email to
+            <span class="link-style red">EMAIL</span> and we’ll be in touch!
+          </li>
+          <li class="faq-question">What forms of payment do you take?</li>
+          <li id="loyalty-card" class="faq-text">
+            Our machines accept
+            <span class="faq-bold">coins, credit, debit,</span> and our Frequent
+            Customer Loyalty Cards. We have an<span class="faq-bold"> ATM</span>
+            and a <span class="faq-bold">change machine</span> on site as well.
+          </li>
+          <li class="faq-question">
+            What is a Frequent Customer Loyalty Card, and how do I get one?
+          </li>
+          <li class="faq-text">
+            Our loyalty card is the easiest way to save even more at
+            <span class="faq-bold">No Spot Laundry</span>! You will receive a
+            <span class="faq-bold">10% discount</span> every time you use it.
+            You can purchase, load and reload your reusable loyalty card anytime
+            you like at the
+            <span class="faq-bold">kiosk in our laundromat</span> or
+            <span class="link-style">
+              <a
+                href="https://secure3.washcard.com/AP2/GuestLanding"
+                target="_blank"
+              >
+                right here</a
+              ></span
+            >! Then, just use it to pay for washers and dryers like you would
+            any other card, and watch the savings add up.
+          </li>
+        </ul>
+      </section>
+      <section id="self-serve-sect">
+        <li
+          class="blue-text first-paragraph-padding intro-opener centered faq-spacing"
+        >
+          Self-Service Questions:
+        </li>
+        <ul
+          class="paragraph-typography hero-body small-paragraph-padding text-block first-paragraph-padding"
+        >
+          <li class="faq-question">Where do I park?</li>
+          <li class="faq-text">
+            We have plenty of
+            <span class="faq-bold">parking right in front</span> of
+            <span class="faq-bold">No Spot Laundry</span> in our large lot. No
+            driving around for 15 minutes looking for a spot or parallel parking
+            necessary!
+          </li>
+          <li class="faq-question">What are your “busy hours”?</li>
+          <li class="faq-text">
+            Our <span class="faq-bold">busiest</span> day of the week is always
+            Sunday, with peak washing hours occurring between 9:00am and 9:00pm.
+            Our <span class="faq-bold">quietest</span> times are Tuesdays and
+            Thursdays between 6:00am and 3:00pm.
+          </li>
+          <li class="faq-question">How long does a laundry cycle take?</li>
+          <li class="faq-text">
+            Our commercial washers and dryers are fast! Most wash cycles take
+            around <span class="faq-bold">25-30 minutes</span>, and dryer times
+            are typically <span class="faq-bold">30-40 minutes</span>.
+          </li>
+          <li class="faq-question">
+            Do you offer laundry products for sale onsite?
+          </li>
+          <li class="faq-text">
+            You bet! we offer Tide, Gain, and All Free Clear detergents, chlorox
+            bleach, and Snuggle or Suavitel fabric softener.
+          </li>
+        </ul>
+      </section>
+      <section id="drop-off-sect">
+        <li
+          class="blue-text first-paragraph-padding intro-opener centered faq-spacing"
+        >
+          Drop Off Wash & Fold Questions:
+        </li>
+        <ul
+          class="paragraph-typography hero-body text-block first-paragraph-padding small-paragraph-padding"
+        >
+          <li class="faq-question">
+            Are there any clothes you cannot clean with your Drop Off Wash &
+            Fold service?
+          </li>
+          <li class="faq-text">
+            Garments that have
+            <span class="faq-bold"
+              >glued on decorations, delicate beading,</span
+            >
+            or are made out of fibers such as
+            <span class="faq-bold">silk</span> are not recommended, those are
+            better gently hand washed. If in doubt,
+            <span class="faq-bold">ask us</span> when you drop off!
+          </li>
+          <li class="faq-question">
+            What is the turn around on a typical drop off order?
+          </li>
+          <li class="faq-text">
+            You will be able to pick up your items after
+            <span class="faq-bold">24 hours (Monday – Friday)</span>! If you
+            drop off on a Friday, your clothing will be ready for you the
+            following Monday.
+          </li>
+          <li class="faq-question">Is there a minimum charge?</li>
+          <li class="faq-text">
+            We do have a minimum charge of
+            <span class="faq-bold">$17.50</span> for drop off orders.
+          </li>
+          <li class="faq-question">
+            Will my clothes be washed or dried with other customer’s clothes?
+          </li>
+          <li class="faq-text">
+            Absolutely not! We wash and dry everyone's laundry order
+            individually in <span class="faq-bold">separate machines</span>.
+          </li>
+          <li class="faq-question">
+            Do I need to sort my clothes by different colors?
+          </li>
+          <li class="faq-text">
+            No need, we will do all sorting for you! We just ask that you put
+            items with specific <span class="faq-bold">stains</span> you'd like
+            us to treat in a <span class="faq-bold">separate bag</span> and let
+            us know to treat them before washing.
+          </li>
+          <li class="faq-question">Do I need to weigh my order?</li>
+          <li class="faq-text">
+            We have a commercial,
+            <span class="faq-bold">trade certified scale</span> that we use to
+            weigh all orders, much easier than a household scale!
+          </li>
+          <li class="faq-question">Can you treat stains?</li>
+          <li class="faq-text">
+            We can definitely <span class="faq-bold">pre-treat </span>stained
+            items before we wash them. Some are beyond our capability of
+            removing, but we are successful in getting out many stains.
+          </li>
+          <li class="faq-text">
+            Please <span class="faq-bold">place</span> all items you would like
+            pre-treated in a <span class="faq-bold">separate bag</span> and let
+            us know in your instructions.
+          </li>
+          <li class="faq-question">
+            How will I know when my order is complete?
+          </li>
+          <li class="faq-text">
+            We'll send you a <span class="faq-bold">text</span> to let you know
+            that your clothes are sparkling clean and ready for pickup!
+          </li>
+        </ul>
+      </section>
+      <section id="pickup-sect">
+        <li
+          class="blue-text first-paragraph-padding intro-opener centered faq-spacing"
+        >
+          Pick Up & Delivery Questions:
+        </li>
+        <ul
+          class="paragraph-typography hero-body text-block first-paragraph-padding small-paragraph-padding"
+        >
+          <li class="faq-question">Are there delivery fees?</li>
+          <li class="faq-text">
+            There are no pickup or delivery fees at
+            <span class="faq-bold">No Spot Laundry</span>, you only pay for the
+            <span class="faq-bold">weight</span> of the laundry that you'd like
+            us to clean!
+          </li>
+          <li class="faq-question">Do I get to keep my laundry bag?</li>
+          <li class="faq-text">
+            Absolutely! Let us know if you have more laundry then the bag can
+            hold and we will send you a second one for your convenience.
+          </li>
+          <li class="faq-question">
+            What is the turn around on a typical Pick up & delivery order?
+          </li>
+          <li class="faq-text">
+            Your laundry will be delivered to your door just
+            <span class="faq-bold">one business day</span> after we pick it up.
+          </li>
+          <li class="faq-question">Is there a minimum charge for pickup?</li>
+          <li class="faq-text">
+            For our Pick Up & Delivery service, We have a minimum charge of
+            <span class="faq-bold">$35</span>.
+          </li>
+          <li class="faq-question">
+            Will you remind me to leave my laundry out for pickup?
+          </li>
+          <li class="faq-text">
+            Of course! You will receive a
+            <span class="faq-bold">notification </span> from us
+            <span class="faq-bold">a day prior</span> to your pick up to let you
+            know to leave your laundry out for us.
+          </li>
+          <li class="faq-question">
+            What if I’m not home when you pick up or deliver?
+          </li>
+          <li class="faq-text">
+            No problem - just leave your laundry somewhere we can access it and
+            <span class="faq-bold">let us know</span> of its location in your
+            <span class="faq-bold">Pickup/Delivery instructions</span>. Many
+            people have us leave their laundry at their back door or on the
+            porch if they are not home. Just make sure it's protected from the
+            elements!
+          </li>
+          <li class="faq-question">I missed my pickup day. what now?</li>
+          <li class="faq-text">
+            You can just arrange another pick up time, and we'll come back
+            around for you! We do charge a
+            <span class="faq-bold">$10 missed pickup fee</span>.
+          </li>
+          <li class="faq-question">
+            Will I be notified when my laundry is delivered?
+          </li>
+          <li class="faq-text">
+            No need to wait by the window, we'll send you a
+            <span class="faq-bold">text</span> when we've delivered your
+            clothes. It's that easy!
+          </li>
+          <li class="faq-question"></li>
+          <li class="faq-text"></li>
+        </ul>
+      </section>
+      <section id="commercial-sect">
+        <li
+          class="blue-text first-paragraph-padding intro-opener centered faq-spacing"
+        >
+          Commercial Laundry Questions:
+        </li>
+        <ul
+          class="paragraph-typography hero-body text-block first-paragraph-padding small-paragraph-padding"
+        >
+          <li class="faq-question">Do I need to sign a contract?</li>
+          <li class="faq-text">
+            <span class="faq-bold">None whatsoever</span>, We'll have to
+            <span class="faq-bold">earn your business</span> each and every
+            time!
+          </li>
+          <li class="faq-question">Do you lease laundry items or linens?</li>
+          <li class="faq-text">We don't currently lease these items.</li>
+          <li class="faq-question">How do i get a quote for my business?</li>
+          <li class="faq-text">
+            Call us at
+            <span class="red link-style"
+              ><a class="phone" href="tel:8169121192">816-912-1192</a></span
+            >
+            or write us at
+            <span class="red link-style">
+              <a href="mailto:info@sclaundromats.com">
+                info@sclaundromats.com</a
+              ></span
+            >. we'll even give you 20% off your first order, just for trying out
+            <span class="faq-bold">No Spot Laundry</span>!
+          </li>
+          <li class="faq-question"></li>
+          <li class="faq-text">
+            If you have a laundry-related question that is not answered on this
+            page, and we will be happy to answer it for you!
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-nav-cont uppercase bold"></div>
+      <div class="footer-info">
+        <div class="footer-address">
+          <div class="bold blue-pri footer-heading">No Spot Laundry</div>
+          <br />
+          6121 Blue Ridge Blvd <br />
+          Raytown, MO 64133 <br />
+          <a
+            class="nav-directions"
+            href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO"
+            target="_blank"
+          >
+            Get Directions</a
+          >
+        </div>
+        <div class="footer-hours">
+          Hours: 6am - Midnight, Daily <br />
+          Last Wash: 10:30pm
+        </div>
+        <div class="contact contact-phone">
+          <a class="phone" href="tel:8169121192">816-912-1192</a>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://www.facebook.com/profile.php?id=100091963404810"
+          target="blank"
+        >
+          <img class="social fb-icon" src="images/fb-icon.jpg" />
+        </a>
+        <a href="https://www.instagram.com/nospotlaundry/" target="blank">
+          <img class="social ig-icon" src="images/insta-icon.jpg" />
+        </a>
+      </div>
+      <div class="footer-info">
+        <div class="tos">
+          <a class="tos" href="terms-of-service.html">Terms Of Service</a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>

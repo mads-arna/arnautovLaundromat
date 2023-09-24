@@ -1,281 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet" />
-		<title>Pick Up & Delivery</title>
-	</head>
-	<body>
-				<header>
-			<div class="nav-container">
-				<div class="logo-container">
-					<a class="logo-link" href="index.html">
-						<img class="logo-img" src="images/logo-expanded-black.PNG" />
-					</a>
-				</div>
-				<div class="desktop-nav-info">
-					<div class="nav-info-block hours text-block">
-						6am- Midnight, Daily <br />
-						<a class="phone" href="tel:8169121192">816-912-1192</a>
-					</div>
-					<div class="address text-block">
-						<a class="desktop-nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"
-							>6121 Blue Ridge Blvd <br />
-							Raytown, MO 64133 <br
-						/></a>
-					</div>
-					<a href="https://app.trycents.com/order/business/OGRm/OTlo/home" target="_blank"><button class="cta-button cta-style uppercase">schedule pickup</button></a>
-				</div>
-				<button class="hamburger">
-					<div class="bar"></div>
-				</button>
-				<nav class="mobile-nav uppercase">
-					<a class="cta-style cta-button" href="https://app.trycents.com/order/business/OGRm/OTlo/home" target="_blank">schedule pickup</a>
-					<a class="bubble-background" href="self-service.html">self service laundry</a>
-					<a class="bubble-background" href="drop-off.html">drop off wash & fold</a>
-					<a class="bubble-background" href="pickup.html">pick up & delivery</a>
-					<a class="bubble-background" href="commercial.html">commercial laundry</a>
-					<a class="bubble-background" href="faq.html">frequently asked questions</a>
-				</nav>
-			</div>
-			<nav class="desktop-nav uppercase">
-				<a class="desktop-nav-button" href="self-service.html"><span class="box">self service laundry</span></a>
-				<a class="desktop-nav-button" href="drop-off.html"><span class="box">drop off wash & fold</span></a>
-				<a class="desktop-nav-button active-pg" href="pickup.html"><span class="box active-pg">pick up & delivery</span></a>
-				<a class="desktop-nav-button" href="commercial.html"><span class="box">commercial laundry</span></a>
-				<a class="desktop-nav-button" href="faq.html"><span class="box">faq</span></a>
-			</nav>
-		</header>
-		<div class="hero hero-home blur">
-			<div class="hero-banner hero-banner-mask">
-				<img class="hero-banner-img" src="images/pickup.jpg" />
-			</div>
-			<div class="blur-text">
-				<div class="blur-content hero-title uppercase blue-text">
-					Pick Up & Delivery Service</div>
-			</div>
-		</div>
-		<div class="hero-wrapper">
-			<li class="blue-text first-paragraph-padding paragraph-padding intro-opener">Clean clothes just got even easier!</li>
-			<ul class="paragraph-typography hero-body text-block">
-				<li class="paragraph-padding first-paragraph-padding">
-					<span class="hero-capitalize">A</span>re you tired of spending your precious time doing never-ending laundry? Do you find it challenging to fit laundry time into your busy schedule? Is your washer broken or not efficient? Would you just prefer to never touch a washer or dryer again?</li>
-				<li class="paragraph-padding">That's why we're here!</li>
-                    
-                <li class="paragraph-padding">Our pickup and delivery service allows you to 	
-					enjoy clean clothes without ever leaving the comfort of your home.</li>
-				
-				<li class="paragraph-padding">
-					<li class="text-block bold uppercase small-paragraph-padding">1) Schedule your Pickup:</li>
-						<li class="paragraph-padding"> <a href="https://app.trycents.com/order/business/OGRm/OTlo/home" target="_blank"><span class="link-style">Click here</span></a> to schedule your pickup. You'll let us know the specifics of how to best treat your valuable clothing, as well as a good pickup/delivery time. You can also set up reccuring pickups whenever you'd like!</li>
-				</li>
-				<li class="paragraph-padding">
-					<li class="text-block bold uppercase small-paragraph-padding">2) We Collect Your Laundry:</li>
-						<li class="small-paragraph-padding">
-							On the day of pick-up, collect and bag your laundry. For your first pickup, please feel free to use 13-gal. garbage bags. We'll give you a laundry bag free of charge when we deliver your clean clothes! This bag is yours to keep, even if you decide to stop using our Pickup & Delivery service.
-							If you have any items that need pre-spotting or other special requests, please bag those separately with a note. We currently don’t offer dry cleaning so please make sure all your items are machine washable.  Make sure the bags are labeled as laundry and no hampers or baskets please. You do not need to be present for pickup.</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet" />
+    <title>Pick Up & Delivery</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a class="logo-link" href="index.html">
+            <img class="logo-img" src="images/logo-expanded-black.PNG" />
+          </a>
+        </div>
+        <div class="desktop-nav-info">
+          <div class="nav-info-block hours text-block">
+            6am- Midnight, Daily <br />
+            <a class="phone" href="tel:8169121192">816-912-1192</a>
+          </div>
+          <div class="address text-block">
+            <a
+              class="desktop-nav-directions"
+              href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO"
+              target="_blank"
+              >6121 Blue Ridge Blvd <br />
+              Raytown, MO 64133 <br
+            /></a>
+          </div>
+          <a
+            href="https://app.trycents.com/order/business/OGRm/OTlo/home"
+            target="_blank"
+            ><button class="cta-button cta-style uppercase">
+              schedule pickup
+            </button></a
+          >
+        </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+        <nav class="mobile-nav uppercase">
+          <a
+            class="cta-style cta-button"
+            href="https://app.trycents.com/order/business/OGRm/OTlo/home"
+            target="_blank"
+            >schedule pickup</a
+          >
+          <a class="bubble-background" href="self-service.html"
+            >self service laundry</a
+          >
+          <a class="bubble-background" href="drop-off.html"
+            >drop off wash & fold</a
+          >
+          <a class="bubble-background" href="pickup.html">pick up & delivery</a>
+          <a class="bubble-background" href="commercial.html"
+            >commercial laundry</a
+          >
+          <a class="bubble-background" href="faq.html"
+            >frequently asked questions</a
+          >
+        </nav>
+      </div>
+      <nav class="desktop-nav uppercase">
+        <a class="desktop-nav-button" href="self-service.html"
+          ><span class="box">self service laundry</span></a
+        >
+        <a class="desktop-nav-button" href="drop-off.html"
+          ><span class="box">drop off wash & fold</span></a
+        >
+        <a class="desktop-nav-button active-pg" href="pickup.html"
+          ><span class="box active-pg">pick up & delivery</span></a
+        >
+        <a class="desktop-nav-button" href="commercial.html"
+          ><span class="box">commercial laundry</span></a
+        >
+        <a class="desktop-nav-button" href="faq.html"
+          ><span class="box">faq</span></a
+        >
+      </nav>
+    </header>
+    <div class="hero hero-home blur">
+      <div class="hero-banner hero-banner-mask">
+        <img class="hero-banner-img" src="images/pickup.jpg" />
+      </div>
+      <div class="blur-text">
+        <div class="blur-content hero-title uppercase blue-text">
+          Pick Up & Delivery Service
+        </div>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <li
+        class="blue-text first-paragraph-padding paragraph-padding intro-opener">
+        Clean clothes just got even easier!
+      </li>
+      <ul class="paragraph-typography hero-body text-block">
+        <li class="small-paragraph-padding first-paragraph-padding">
+          <span class="hero-capitalize">A</span>re you tired of spending your
+          precious time doing never-ending laundry? Do you find it challenging
+          to fit laundry time into your busy schedule? Is your washer broken or
+          not efficient? Would you just prefer to never touch a washer or dryer
+          again?
+        </li>
+        <li class="small-paragraph-padding bold">That's why we're here!</li>
 
-						<li class="small-paragraph-padding"> All items are <span class="bold">carefully folded</span> as they are removed from dryers or lines, resulting in a
-						wrinkle-free, fresh look. If you would like some or all of your clothes <span class="bold">hung up</span> instead of folded, just bring us your hangers! We can provide hangers for $.25 each, if needed.</li><li class="small-paragraph-padding">After
-						folding or hanging, your clean laundry will be neatly bagged. When we are all finished with your clothes, <span class="bold">we will text you</span> and let you know that they are ready for you.</li><li class="small-paragraph-padding">
-						Do you have <span class="bold">special instructions?</span> Let us know! We will do our best to accommodate you.</li> </li>
-				<li class="paragraph-padding">
-					<li class="text-block bold uppercase small-paragraph-padding">3) You Pick Up </li>
-						<li class="paragraph-padding">Your clothes will be ready for pick up the very <span class="bold">next weekday!</span> After we text you, just stop by and our attendants will have your clothes ready for you to take home. <span class="bold">Congratulations, you're finished with laundry!</span></li>
-			</ul>
-		</div>
-			<ul class="paragraph-typography centered">
-					<li class="blue-text bold text-block margin-bottom">We always do your laundry your way:</li>
-				</ul>
-				<div class="laundry-list paragraph-typography hero-body">
-					<div class="laundry-list-section drop-off-body">
-						<ul class="text-block list-padding paragraph-padding">
-							<li class="list-padding">-Choose your detergent from: <span class="bold">Tide, Gain, All Free & Clear</li>
-							<li class="list-padding">-Choose to add <span class="bold">Downy, Snuggles, or All Free & Clear fabric softener</span>,<span class="bold"> Bounce or All Free & Clear</span> dryer sheets, or/and <span class="bold">Downy Unstopables</span> scent boosters for an extra luxurious feel</li>
-							<li class="list-padding">-Do you want a <span class="bold">special detergent</span> or softener that we don't have? No problem! Just provide it with your order, and we will use whichever product you prefer</li>
-							<li class="list-padding">-Let us know if you want </span><span class="bold">bleach</span> used with your wash</li>
-							<li class="list-padding">-We can line dry some or all of your items</li>
-							<li class="list-padding">-Have a <span class="bold">stain</span> on one of your items? Please let your attendants know and we will pre-treat it before washing.</li>
-						</ul>
-					</div>
-					<div class="laundry-list-section centered drop-off-body">
-						<p class="hero-title uppercase bold text-block first-paragraph-padding">Our Drop Off Rates:</p>
-						<li><span class="red fine-print">*$17.50 Minimum Charge</span></li>
-					</div>
-				</div>
-				<div class="card-deck">
-					<div class="price-card">
-						<div class="price-card-content text-block bigger-price-cont">
-							<div>Wash,<br> Dry & Bag <br>(No Fold)</div> 
-							<div class="price">$1.50</div>
-							<div class="fine-print">Per Pound</div>
-						</div>
-					</div>
-					<div class="price-card">
-						<div class="price-card-content text-block bigger-price-cont">
-							<div>Wash & Fold <br> (W&F)</div> 
-							<div class="price">$1.75</div>
-							<div class="fine-print">Per Pound</div>
-						</div>
-					</div>
-					<div class="price-card">
-						<div class="price-card-content text-block">
-							<div>Same Day W&F <br>(Limited Availibility)</div> 
-							<div class="price">$2.00</div>
-							<div class="fine-print">Per Pound</div>
-						</div>
-					</div>
-					<div class="price-card">
-						<div class="price-card-content text-block">
-							<div>Heavily Soiled <br> W&F</div> 
-							<div class="price">$2.50</div>
-							<div class="fine-print">Per Pound</div>
-						</div>
-					</div>
-					<div class="price-card">
-						<div class="price-card-content text-block">
-							<div>Baby/Toddler <br>Clothes W&F</div> 
-							<div class="price">$2.00</div>
-							<div class="fine-print">Per Pound</div>
-						</div>
-					</div>
-				</div>
-				<ul class="centered uppercase hero-wrapper">
-					<li class="bold text-block card-title margin-bottom">Individually Priced Items:</li>
-					<ul class="">
-							<ul class="drop-off-individuals paragraph-typography">
-								<li><span class="bold text-block">Comforters/duvets:</span></li>
+        <li class="paragraph-padding">
+          Our pickup and delivery service allows you to enjoy clean clothes
+          without ever leaving the comfort of your home. It's that simple!
+        </li>
 
-								<li class="flex-line first-paragraph-padding text-block">
-									<span class="dotted-line first">Twin</span>
-									<span class="dotted-line last">$13.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">Full/Queen</span>
-									<span class="dotted-line last">$15.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">King</span>
-									<span class="dotted-line last">$18.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">California King</span>
-									<span class="dotted-line last">$22.00</span>
-								</li>
-								
-						</ul>
-							<div class="centered laundry-list-section centered-body">
-							<p class="paragraph-padding lowercase fine-print red">Down Filled Items: Add $5.00</p>
-						
-						</div>
-						
-							
-							<ul class="drop-off-individuals paragraph-typography">
-								<li><span class="bold text-block">Mattress Pads/Blankets/quilts:</span></li>
-								
-								<li class="flex-line text-block first-paragraph-padding">
-									<span class="dotted-line first">Twin</span>
-									<span class="dotted-line last">$10.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">Full/Queen</span>
-									<span class="dotted-line last">$12.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">King</span>
-									<span class="dotted-line last">$15.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">California King</span>
-									<span class="dotted-line last">$18.00</span>
-								</li>
-							</ul>
-							<ul class="drop-off-individuals paragraph-typography">
-								<li><span class="bold text-block">Pillows:</span></li>
+        <li class="paragraph-padding"></li>
+        <li class="text-block bold uppercase small-paragraph-padding">
+          1) Schedule your Pickup:
+        </li>
+        <li class="paragraph-padding">
+          <a
+            href="https://app.trycents.com/order/business/OGRm/OTlo/home"
+            target="_blank"
+            ><span class="link-style">Click here</span></a
+          >
+          to schedule your pickup. You'll let us know the specifics of how to
+          best treat your valuable clothing, as well as a good pickup/delivery
+          time. You can also set up reccuring pickups whenever you'd like!
+        </li>
+        <li class="paragraph-padding"></li>
+        <li class="text-block bold uppercase small-paragraph-padding">
+          2) We Collect Your Laundry:
+        </li>
+        <li class="small-paragraph-padding">
+          On the day of pick-up, collect and bag your laundry. For your first
+          pickup, please feel free to use garbage bags or any other disposable
+          bag (no hampers or baskets please). 13 gallon garbage bags best match
+          the size of our laundry bags. We'll give you a No Spot laundry bag
+          free of charge when we deliver your clean clothes! This bag is yours
+          to keep, even if you decide to stop using our Pickup & Delivery
+          service.
+        </li>
+        <li class="small-paragraph-padding">
+          If you have any items that need pre-treating for stains or other
+          special requests, please bag those separately with a note. Make sure
+          the bags are labeled as laundry so we don't accidentally take a wrong
+          bag. That's it! You don't need to be waiting around for pickup, just
+          let us know where and when and we'll come grab your clothes.
+        </li>
+        <li class="paragraph-padding"></li>
+        <li class="text-block bold uppercase small-paragraph-padding">
+          3) Clean Laundry is Delivered Back to You:
+        </li>
+        <li class="paragraph-padding">
+          Each order is washed separately and tagged throughout the process to
+          ensure your items never mingle with other orders. Your clothes will be
+          washed, dried, and promptly folded and bagged. They will be returned
+          to you the very next day neatly packaged for both privacy and
+          protection. We'll bring it right to your doorstep.
+        </li>
+      </ul>
+    </div>
+    <ul class="paragraph-typography centered">
+      <li class="blue-text bold text-block margin-bottom">
+        We always do your laundry your way:
+      </li>
+    </ul>
+    <div class="laundry-list paragraph-typography hero-body">
+      <div class="laundry-list-section drop-off-body">
+        <ul class="text-block list-padding paragraph-padding">
+          <li class="list-padding">
+            -Choose your detergent from:
+            <span class="bold"
+              >Tide, Gain, All Free & Clear
+              <li class="list-padding">
+                -Choose to add
+                <span class="bold"
+                  >Downy, Snuggles, or All Free & Clear fabric softener</span
+                >,<span class="bold"> Bounce or All Free & Clear</span> dryer
+                sheets, or/and <span class="bold">Downy Unstopables</span> scent
+                boosters for an extra luxurious feel
+              </li>
+              <li class="list-padding">
+                -Do you want a <span class="bold">special detergent</span>
+                or softener that we don't have? No problem! Just provide it with
+                your order, and we will use whichever product you prefer
+              </li>
+              <li class="list-padding">-Let us know if you want</li></span
+            ><span class="bold">bleach</span> used with your wash
+          </li>
+          <li class="list-padding">
+            -We can line dry some or all of your items
+          </li>
+          <li class="list-padding">
+            -Have a <span class="bold">stain</span> on one of your items? Please
+            let your attendants know and we will pre-treat it before washing.
+          </li>
+        </ul>
+      </div>
+      <div class="laundry-list-section centered drop-off-body">
+        <p class="hero-title uppercase bold text-block first-paragraph-padding">
+          Our Drop Off Rates:
+        </p>
+        <li><span class="red fine-print">*$17.50 Minimum Charge</span></li>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="price-card">
+        <div class="price-card-content text-block bigger-price-cont">
+          <div>
+            Wash,<br />
+            Dry & Bag <br />(No Fold)
+          </div>
+          <div class="price">$1.50</div>
+          <div class="fine-print">Per Pound</div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-content text-block bigger-price-cont">
+          <div>
+            Wash & Fold <br />
+            (W&F)
+          </div>
+          <div class="price">$1.75</div>
+          <div class="fine-print">Per Pound</div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-content text-block">
+          <div>Same Day W&F <br />(Limited Availibility)</div>
+          <div class="price">$2.00</div>
+          <div class="fine-print">Per Pound</div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-content text-block">
+          <div>
+            Heavily Soiled <br />
+            W&F
+          </div>
+          <div class="price">$2.50</div>
+          <div class="fine-print">Per Pound</div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-card-content text-block">
+          <div>Baby/Toddler <br />Clothes W&F</div>
+          <div class="price">$2.00</div>
+          <div class="fine-print">Per Pound</div>
+        </div>
+      </div>
+    </div>
+    <ul class="centered uppercase hero-wrapper">
+      <li class="bold text-block card-title margin-bottom">
+        Individually Priced Items:
+      </li>
+      <ul class="">
+        <ul class="drop-off-individuals paragraph-typography">
+          <li><span class="bold text-block">Comforters/duvets:</span></li>
 
-								<li class="flex-line text-block first-paragraph-padding">
-									<span class="dotted-line first">Throw</span>
-									<span class="dotted-line last">$3.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">Standard/King</span>
-									<span class="dotted-line last">$6.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">Body</span>
-									<span class="dotted-line last">$10.00</span>
-								</li>
-							</ul>
-							<ul class="drop-off-individuals paragraph-typography">
-								<li><span class="bold text-block">Washable Rugs & Mats:</span></li>
+          <li class="flex-line first-paragraph-padding text-block">
+            <span class="dotted-line first">Twin</span>
+            <span class="dotted-line last">$13.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">Full/Queen</span>
+            <span class="dotted-line last">$15.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">King</span>
+            <span class="dotted-line last">$18.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">California King</span>
+            <span class="dotted-line last">$22.00</span>
+          </li>
+        </ul>
+        <div class="centered laundry-list-section centered-body">
+          <p class="paragraph-padding lowercase fine-print red">
+            Down Filled Items: Add $5.00
+          </p>
+        </div>
 
-								<li class="flex-line text-block first-paragraph-padding">
-									<span class="dotted-line first">Small</span>
-									<span class="dotted-line last">$5.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">Medium</span>
-									<span class="dotted-line last">$10.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">Large</span>
-									<span class="dotted-line last">$15.00</span>
-								</li>
-							</ul>
-							<ul class="drop-off-individuals paragraph-typography">
-								<li><span class="bold text-block">Sleeping Bags:</span></li>
+        <ul class="drop-off-individuals paragraph-typography">
+          <li>
+            <span class="bold text-block">Mattress Pads/Blankets/quilts:</span>
+          </li>
 
-								<li class="flex-line text-block first-paragraph-padding">
-									<span class="dotted-line first">Small</span>
-									<span class="dotted-line last">$13.00</span>
-								</li>
-								<li class="flex-line text-block">
-									<span class="dotted-line first">large</span>
-									<span class="dotted-line last">$15.00</span>
-								</li>
-							</ul>
-						</ul>
+          <li class="flex-line text-block first-paragraph-padding">
+            <span class="dotted-line first">Twin</span>
+            <span class="dotted-line last">$10.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">Full/Queen</span>
+            <span class="dotted-line last">$12.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">King</span>
+            <span class="dotted-line last">$15.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">California King</span>
+            <span class="dotted-line last">$18.00</span>
+          </li>
+        </ul>
+        <ul class="drop-off-individuals paragraph-typography">
+          <li><span class="bold text-block">Pillows:</span></li>
 
-				</ul>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div class="footer-nav-cont uppercase bold"></div>
-			<div class="footer-info">
-				<div class="footer-address">
-					<div class="bold blue-pri footer-heading"> No Spot Laundry</div> <br />
-					6121 Blue Ridge Blvd <br />
-					Raytown, MO 64133 <br />
-					<a class="nav-directions" href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO" target="_blank"> Get Directions</a>
-				</div>
-				<div class="footer-hours">
-					Hours: 6am - Midnight, Daily <br />
-					Last Wash: 10:30pm
-				</div>
-				<div class="contact contact-phone">
-					<a class="phone" href="tel:8169121192">816-912-1192</a>
-				</div>
-			</div>
-			<div class="footer-socials">
-				<a href="https://www.facebook.com/profile.php?id=100091963404810" target="blank">
-					<img class="social fb-icon" src="images/fb-icon.jpg" />
-				</a>
-				<a href="https://www.instagram.com/nospotlaundry/" target="blank">
-					<img class="social ig-icon" src="images/insta-icon.jpg" />
-				</a>
-			</div>
-			<div class="footer-info">
-				<div class="tos">
-					<a class="tos" href="terms-of-service.html">Terms Of Service</a>
-				</div>
-			</div>
-		</footer>
-		<script src="app.js"></script>
-	</body>
+          <li class="flex-line text-block first-paragraph-padding">
+            <span class="dotted-line first">Throw</span>
+            <span class="dotted-line last">$3.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">Standard/King</span>
+            <span class="dotted-line last">$6.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">Body</span>
+            <span class="dotted-line last">$10.00</span>
+          </li>
+        </ul>
+        <ul class="drop-off-individuals paragraph-typography">
+          <li><span class="bold text-block">Washable Rugs & Mats:</span></li>
+
+          <li class="flex-line text-block first-paragraph-padding">
+            <span class="dotted-line first">Small</span>
+            <span class="dotted-line last">$5.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">Medium</span>
+            <span class="dotted-line last">$10.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">Large</span>
+            <span class="dotted-line last">$15.00</span>
+          </li>
+        </ul>
+        <ul class="drop-off-individuals paragraph-typography">
+          <li><span class="bold text-block">Sleeping Bags:</span></li>
+
+          <li class="flex-line text-block first-paragraph-padding">
+            <span class="dotted-line first">Small</span>
+            <span class="dotted-line last">$13.00</span>
+          </li>
+          <li class="flex-line text-block">
+            <span class="dotted-line first">large</span>
+            <span class="dotted-line last">$15.00</span>
+          </li>
+        </ul>
+      </ul>
+    </ul>
+    <footer>
+      <div class="footer-nav-cont uppercase bold"></div>
+      <div class="footer-info">
+        <div class="footer-address">
+          <div class="bold blue-pri footer-heading">No Spot Laundry</div>
+          <br />
+          6121 Blue Ridge Blvd <br />
+          Raytown, MO 64133 <br />
+          <a
+            class="nav-directions"
+            href="https://www.google.com/maps/dir/Current+Location/6121+Blue+Ridge+Blvd+Raytown+MO"
+            target="_blank">
+            Get Directions</a
+          >
+        </div>
+        <div class="footer-hours">
+          Hours: 6am - Midnight, Daily <br />
+          Last Wash: 10:30pm
+        </div>
+        <div class="contact contact-phone">
+          <a class="phone" href="tel:8169121192">816-912-1192</a>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://www.facebook.com/profile.php?id=100091963404810"
+          target="blank">
+          <img class="social fb-icon" src="images/fb-icon.jpg" />
+        </a>
+        <a href="https://www.instagram.com/nospotlaundry/" target="blank">
+          <img class="social ig-icon" src="images/insta-icon.jpg" />
+        </a>
+      </div>
+      <div class="footer-info">
+        <div class="tos">
+          <a class="tos" href="terms-of-service.html">Terms Of Service</a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>
