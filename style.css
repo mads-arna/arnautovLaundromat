@@ -326,7 +326,7 @@ li {
 }
 .intro-opener {
   font-family: "Serenata", serif;
-  font-size: 27px;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 .not-home {
@@ -514,6 +514,46 @@ li {
 .invisible {
   display: none !important;
 }
+.loyalty-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.loyalty-card-top {
+  border: 4px solid var(--pri-color);
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem 1.5rem 0.3rem 1.5rem;
+  background-color: #e7f1fe;
+}
+.loyalty-card-middle {
+  border-bottom: 4px solid var(--pri-color);
+  border-left: 4px solid var(--pri-color);
+  border-right: 4px solid var(--pri-color);
+  padding: 0.3rem 1.5rem 0.55rem 1.5rem;
+}
+.loyalty-card-bottom {
+  border-bottom: 4px solid var(--pri-color);
+  border-left: 4px solid var(--pri-color);
+  border-right: 4px solid var(--pri-color);
+  padding: 0.2rem 0.75rem 0.35rem 0.75rem;
+  border-radius: 0 0 10px 10px;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  color: var(--blue-text);
+  box-shadow: 6px 6px 12px #c5c5c5;
+  background-color: #e7f1fe;
+}
+.loyalty-small {
+  font-size: 1rem;
+}
+.loyalty-wrapper:hover {
+  box-shadow: 5px 5px 20px #74737370;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
 footer {
   background-color: black;
   opacity: 0.8;
@@ -637,6 +677,9 @@ footer {
   text-decoration: solid underline var(--pri-color);
   align-items: center !important;
 }
+.faq-link {
+  font-size: 1.3rem;
+}
 .faq-spacing {
   padding-top: 3rem;
   padding-bottom: 1rem;
@@ -664,6 +707,11 @@ footer {
 .self-service-flex-wrapper {
   display: flex;
   flex-wrap: wrap;
+}
+.attribution {
+  font-family: "Exa", monospace;
+  font-size: 0.9rem;
+  text-align: center;
 }
 .laundry-list {
   justify-content: space-evenly;
@@ -815,7 +863,7 @@ footer {
 
 @media (min-width: 900px) {
   .desktop-nav-info {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
   }
   .nav-container {
@@ -929,7 +977,7 @@ footer {
     margin: 3rem auto;
   }
   .desktop-nav-info {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: bold;
   }
   .cta-button {
