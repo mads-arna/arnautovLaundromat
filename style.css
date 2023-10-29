@@ -164,7 +164,7 @@ li {
   }
 }
 .cta-button-large {
-  margin: 5rem 0 10rem 0;
+  margin: 1rem 0 4rem 0;
   cursor: pointer;
   outline: none;
   border: none;
@@ -326,7 +326,7 @@ li {
 }
 .intro-opener {
   font-family: "Serenata", serif;
-  font-size: 2.2rem;
+  font-size: 2.2rem !important;
   font-weight: bold;
 }
 .not-home {
@@ -338,10 +338,6 @@ li {
   font-size: 1.1rem;
   font-weight: bold;
   padding: 0.6rem 0.5rem 0 0.6rem;
-}
-.closing-quote {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
 }
 .bubble-background {
   background-image: url("images/help-banner-new.PNG");
@@ -678,7 +674,7 @@ footer {
   align-items: center !important;
 }
 .faq-link {
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
 }
 .faq-spacing {
   padding-top: 3rem;
@@ -717,6 +713,12 @@ footer {
   justify-content: space-evenly;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.closing-quote {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.1rem !important;
+  text-align: center;
 }
 @media (min-width: 430px) {
   .mobile-nav {
