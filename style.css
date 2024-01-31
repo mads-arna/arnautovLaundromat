@@ -59,7 +59,7 @@ li {
 
 .desktop-nav-info {
   display: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--grey-text);
 }
 /* START DESKTOP NAVBAR */
@@ -480,7 +480,7 @@ li {
 }
 /* PRICE CARDS END */
 .coming-soon-img {
-  max-width: 600px;
+  max-width: 350px;
 }
 .coming-soon-banner {
   background-color: #00bea6;
@@ -588,6 +588,9 @@ footer {
   display: inline-block;
   width: 15px;
   height: 15px;
+}
+.footer-hours {
+  font-size: 1.3rem;
 }
 .social {
   width: 55px;
@@ -708,6 +711,7 @@ footer {
   font-family: "Exa", monospace;
   font-size: 0.9rem;
   text-align: center;
+  padding-top: 0.6rem;
 }
 .laundry-list {
   justify-content: space-evenly;
@@ -804,6 +808,9 @@ footer {
     margin-right: min(20vw, 400px);
     margin-bottom: 3rem;
   }
+  .coming-soon-img {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 770px) {
@@ -865,7 +872,6 @@ footer {
 
 @media (min-width: 900px) {
   .desktop-nav-info {
-    font-size: 0.9rem;
     font-weight: bold;
   }
   .nav-container {
@@ -892,6 +898,11 @@ footer {
     margin-bottom: 4rem;
   }
 }
+@media (min-width: 1070px) {
+  .desktop-nav-info {
+    font-size: 1.115rem;
+  }
+}
 @media (max-width: 1400px) {
   .large-break {
     display: none;
@@ -901,6 +912,9 @@ footer {
 @media (min-width: 1370px) {
   .home-blur-content {
     padding: 0;
+  }
+  .desktop-nav-info {
+    font-size: 1.1rem;
   }
   .blur-content {
     text-align: left;
@@ -979,7 +993,7 @@ footer {
     margin: 3rem auto;
   }
   .desktop-nav-info {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     font-weight: bold;
   }
   .cta-button {
