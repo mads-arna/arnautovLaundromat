@@ -1,7 +1,3 @@
-<script
-  async
-  src="https://tag.simpli.fi/sifitag/bc87abb9-b015-44df-93b8-78e2f7d32006"></script>;
-
 window.onload = function () {
   const menu_btn = document.querySelector(".hamburger");
   const mobile_menu = document.querySelector(".mobile-nav");
